@@ -1,0 +1,104 @@
+/* =================== */
+/* Navbar Styles */
+/* =================== */
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 30px; /* Reduced height */
+  background-color: #1b4d3e; /* Dark Green */
+  color: white;
+  position: fixed;
+  width: 100%;
+  top: 0;
+  left: 0;
+  z-index: 100;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.2);
+  font-family: Arial, sans-serif;
+}
+
+.navbar .logo {
+  font-size: 1.8rem;
+  font-weight: bold;
+  color: white;
+  text-decoration: none;
+}
+
+/* Vertical Links (Desktop) */
+.nav-links {
+  display: flex;
+  flex-direction: column; /* stack vertically */
+  list-style: none;
+  gap: 10px;
+}
+
+.nav-links li a {
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 1rem;
+  padding: 6px 10px;
+  border-radius: 4px;
+  transition: all 0.3s ease;
+}
+
+.nav-links li a:hover {
+  background-color: #d8f0de; /* light green hover */
+  color: #1b4d3e; /* dark text on hover */
+  transform: scale(1.05);
+}
+
+/* Mobile Menu Icon */
+.mobile-menu-icon {
+  display: none;
+  font-size: 1.8rem;
+  cursor: pointer;
+  user-select: none;
+}
+
+/* Mobile Menu */
+.mobile-menu {
+  display: flex;
+  flex-direction: column;
+  background-color: #1b4d3e;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 0;
+  overflow: hidden;
+  transition: height 0.4s ease;
+  padding-top: 60px; /* space for navbar */
+  z-index: 105;
+}
+
+.mobile-menu.show {
+  height: 100vh;
+}
+
+.mobile-menu a {
+  color: white;
+  padding: 15px 0;
+  text-align: center;
+  font-weight: bold;
+  text-decoration: none;
+  font-size: 1.2rem;
+  transition: all 0.3s ease;
+}
+
+.mobile-menu a:hover {
+  background-color: #d8f0de;
+  color: #1b4d3e;
+  transform: scale(1.05);
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .nav-links {
+    display: none; /* hide vertical desktop links on mobile */
+  }
+  .mobile-menu-icon {
+    display: block;
+  }
+}
