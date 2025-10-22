@@ -5,7 +5,7 @@ export default function Gallery() {
   return (
     <div className="home-container">
       <section className="featured" style={{ paddingTop: "80px" }}>
-        <h2>Gallery</h2>
+        <h2>Images</h2>
 
         <div style={{
           display: "grid",

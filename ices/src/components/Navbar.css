@@ -1,13 +1,11 @@
-/* =================== */
-/* Navbar Styles */
-/* =================== */
+
 
 .navbar {
   display: flex;
-  justify-content: space-between;
+  justify-content: flex-start;
   align-items: center;
-  padding: 10px 30px; /* Reduced height */
-  background-color: #1b4d3e; /* Dark Green */
+  padding: 5px 10px;
+  background-color: #1b4d3e;
   color: white;
   position: fixed;
   width: 100%;
@@ -18,19 +16,34 @@
   font-family: Arial, sans-serif;
 }
 
+/* Back Arrow */
+.back-arrow {
+  font-size: 1.8rem;
+  cursor: pointer;
+  color: white;
+  margin-right: 15px;
+  user-select: none;
+  transition: color 0.3s;
+}
+
+.back-arrow:hover {
+  color: #d8f0de;
+}
+
+/* Logo */
 .navbar .logo {
   font-size: 1.8rem;
   font-weight: bold;
   color: white;
   text-decoration: none;
+  margin-right: 20px;
 }
 
-/* Vertical Links (Desktop) */
+/* Nav links */
 .nav-links {
   display: flex;
-  flex-direction: column; /* stack vertically */
-  list-style: none;
   gap: 10px;
+  list-style: none;
 }
 
 .nav-links li a {
@@ -44,8 +57,8 @@
 }
 
 .nav-links li a:hover {
-  background-color: #d8f0de; /* light green hover */
-  color: #1b4d3e; /* dark text on hover */
+  background-color: #d8f0de;
+  color: #1b4d3e;
   transform: scale(1.05);
 }
 
@@ -55,6 +68,7 @@
   font-size: 1.8rem;
   cursor: pointer;
   user-select: none;
+  margin-left: auto;
 }
 
 /* Mobile Menu */
@@ -63,18 +77,18 @@
   flex-direction: column;
   background-color: #1b4d3e;
   position: fixed;
-  top: 0;
+  top: 50px; /* below navbar */
   left: 0;
   width: 100%;
   height: 0;
   overflow: hidden;
   transition: height 0.4s ease;
-  padding-top: 60px; /* space for navbar */
+  padding-top: 10px;
   z-index: 105;
 }
 
 .mobile-menu.show {
-  height: 100vh;
+  height: calc(100vh - 50px);
 }
 
 .mobile-menu a {
@@ -96,7 +110,7 @@
 /* Responsive */
 @media (max-width: 768px) {
   .nav-links {
-    display: none; /* hide vertical desktop links on mobile */
+    display: none;
   }
   .mobile-menu-icon {
     display: block;

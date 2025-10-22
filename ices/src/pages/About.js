@@ -1,14 +1,14 @@
 import React from "react";
-import "./Home.css"; // reuse existing CSS
+import "./Home.css"; 
 
 export default function About() {
   return (
     <div className="home-container">
       <section className="hero" style={{ padding: "100px 20px" }}>
         <div className="hero-text">
-          <h1>About Inno-Hub</h1>
+          <h1>About ICES</h1>
           <p>
-            Inno-Hub is a student-led innovation hub within the Civil Engineering Department.
+            Innovation in Civil Engineering is a student-led innovation platform within the Civil Engineering Department.
             Our mission is to foster creativity, sustainability, and real-world problem solving
             through student projects, workshops, and research initiatives.
           </p>
@@ -22,7 +22,7 @@ export default function About() {
           <div className="project-content">
             <h3>Vision</h3>
             <p>
-              To become a leading hub for civil engineering innovation, promoting
+              To become a leading platform for civil engineering innovation, promoting
               sustainable infrastructure solutions and impactful community projects.
             </p>
 

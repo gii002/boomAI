@@ -1,80 +1,85 @@
 .department-container {
-  max-width: 1200px;
-  margin: 50px auto;
-  padding: 20px;
-  font-family: Arial, sans-serif;
-  color: #1b4d3e;
+  text-align: center;
+  padding: 40px 20px;
+  background-color: #f8f9fa;
+  font-family: "Poppins", sans-serif;
 }
 
-/* Tree structure */
+.department-container h1 {
+  color: #1b4d3e;
+  margin-bottom: 30px;
+}
+
 .tree {
-  display: flex;
-  justify-content: center;
-  flex-direction: column;
-  align-items: center;
   list-style: none;
   padding-left: 0;
 }
 
 .tree ul {
   list-style: none;
-  padding-left: 40px;
+  padding-left: 20px;
   position: relative;
 }
 
 .tree ul::before {
-  content: '';
+  content: "";
   position: absolute;
   top: 0;
-  left: 20px;
+  left: 15px;
   width: 2px;
   height: 100%;
   background-color: #1b4d3e;
 }
 
-.tree li {
-  margin: 20px 0;
-  position: relative;
-}
-
-.tree li::before {
-  content: '';
-  position: absolute;
-  top: 0;
-  left: -40px;
-  width: 40px;
-  height: 2px;
-  background-color: #1b4d3e;
-}
-
 .card {
-  background-color: #e6f4ea;
-  border: 2px solid #1b4d3e;
-  padding: 15px 20px;
-  border-radius: 10px;
-  text-align: center;
-  min-width: 180px;
-  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  display: inline-block;
+  background-color: white;
+  padding: 15px;
+  border-radius: 12px;
+  box-shadow: 0 3px 8px rgba(0, 0, 0, 0.15);
+  margin: 10px;
+  min-width: 200px;
+  transition: transform 0.3s ease;
 }
 
 .card:hover {
   transform: translateY(-5px);
-  box-shadow: 0 5px 15px rgba(27, 77, 62, 0.3);
+}
+
+.card h3 {
+  margin: 8px 0 4px;
+  color: #1b4d3e;
+}
+
+.card p {
+  margin: 0;
+  color: #333;
+  font-size: 0.9rem;
+}
+
+/* Profile Image */
+.profile-img {
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 3px solid #1b4d3e;
+  margin-bottom: 8px;
 }
 
 /* Responsive */
 @media (max-width: 768px) {
-  .tree ul {
-    padding-left: 20px;
-  }
-
-  .tree li::before {
-    left: -20px;
-    width: 20px;
-  }
-
   .card {
-    min-width: 150px;
-    padding: 12px 15px;
+    min-width: 160px;
+    padding: 10px;
+  }
+
+  .profile-img {
+    width: 60px;
+    height: 60px;
+  }
+
+  .department-container h1 {
+    font-size: 1.3rem;
   }
 }

@@ -8,8 +8,8 @@ export default function Footer() {
       <div className="footer-container">
         {/* About */}
         <div className="footer-column">
-          <h3>Inno-Hub</h3>
-          <p>A student-led innovation hub under Civil Engineering Department,
+          <h3>ICES</h3>
+          <p>A student-led innovation platform under Civil Engineering Department,
              focusing on sustainable projects, research, and community engagement.</p>
         </div>
 
@@ -27,7 +27,7 @@ export default function Footer() {
         {/* Contact Info */}
         <div className="footer-column">
           <h3>Contact Us</h3>
-          <p>Email: <a href="mailto:innohub@gmail.com">innohub@gmail.com</a></p>
+          <p>Email: <a href="mailto:ices@gmail.com">ices@gmail.com</a></p>
           <p>Location: Civil Engineering Dept, MUBAS</p>
           <p>© {new Date().getFullYear()} Inno-Hub</p>
         </div>

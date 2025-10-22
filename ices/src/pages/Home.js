@@ -8,9 +8,9 @@ export default function Home() {
       {/* Hero Section */}
       <section className="hero">
         <div className="hero-text">
-          <h1>Welcome to Inno-Hub</h1>
+          <h1>Welcome to Innovation In Civil Engineering (ICES)</h1>
           <p>
-            A hub of innovation and creativity under the Civil Engineering Department.
+            A platform of innovation and creativity under the Civil Engineering Department.
             We focus on practical engineering solutions, research, and community-driven projects.
           </p>
           <div className="hero-buttons">
@@ -18,13 +18,13 @@ export default function Home() {
             <Link to="/about" className="secondary">Learn More</Link>
           </div>
         </div>
-        <div className="hero-image">Club Logo / Image</div>
+        <div className="hero-image">Log</div>
       </section>
 
       {/* Stats Section */}
       <section className="stats">
         <div className="stat-item">
-          <div className="number">25+</div>
+          <div className="number">100++</div>
           <div className="label">Active Members</div>
         </div>
         <div className="stat-item">
